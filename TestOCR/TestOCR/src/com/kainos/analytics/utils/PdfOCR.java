@@ -13,7 +13,7 @@ public class PdfOCR {
 	public static void main(String[] args) {
 		File imageFile = new File("test.pdf");
 	// Pass in parent of tessdata folder, avoiding issues with TESSDATA_PREFIX	
-        ITesseract instance = new Tesseract("/usr/share/lib");  // JNA Interface Mapping
+        ITesseract instance = new Tesseract("/usr/local/share");  // JNA Interface Mapping
 
         try {
         	System.out.println("File to OCR: " + imageFile);
